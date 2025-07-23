@@ -19,7 +19,7 @@ app.use(express.json())
 
 
 app.use(cors({
-  origin: process.env.FRONTEND_URL,
+  origin: 'https://e-commerce-frontend-two-snowy.vercel.app/',
   methods: ["POST", "GET", "DELETE", "PUT"],
   credentials: true
 }));
