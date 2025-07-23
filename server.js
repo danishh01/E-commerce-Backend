@@ -19,7 +19,7 @@ app.use(express.json())
 
 
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: process.env.FRONTEND_URL,
   methods: ["POST", "GET", "DELETE", "PUT"],
   credentials: true
 }));
@@ -45,7 +45,7 @@ app.use('/api/payment',paymentRouter)
 
 mongoose
   .connect(
-    'mongodb+srv://mrsurah12345:xRP3nNGcJUNrTCl4@cluster0.na2ugda.mongodb.net/',
+    process.env.MONGO_URL,
     {
       dbName: "MERN_Ecommerce",
     }
