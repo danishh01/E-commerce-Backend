@@ -45,7 +45,7 @@ app.use('/api/payment',paymentRouter)
 
 mongoose
   .connect(
-    process.env.MONGO_URL,
+    'mongodb+srv://mrsurah12345:xRP3nNGcJUNrTCl4@cluster0.na2ugda.mongodb.net/',
     {
       dbName: "MERN_Ecommerce",
     }
